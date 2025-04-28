@@ -1,0 +1,96 @@
+/* General Header Styling */
+header {
+    background-color: #2c3e50; /* Dark blue-grey background */
+    color: #ecf0f1;          /* Light grey text color */
+    padding: 15px 30px;       /* Vertical and horizontal padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;              /* Full width */
+    box-sizing: border-box;   /* Include padding in width calculation */
+    position: sticky;         /* Keep header visible on scroll */
+    top: 0;                   /* Stick to the top */
+    z-index: 1000;            /* Ensure it stays above other content */
+  }
+  
+  /* Navigation List Styling */
+  header nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;       /* Remove default padding */
+    margin: 0;        /* Remove default margin */
+    display: flex;    /* Arrange items horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 25px;        /* Space between navigation items */
+  }
+  
+  /* Individual List Item Styling (optional - often handled by ul gap) */
+  header nav ul li {
+    /* Can add specific margins here if not using 'gap' in ul */
+  }
+  
+  /* Navigation Link Styling (Targets the <a> tag rendered by NavLink) */
+  header nav ul li a {
+    color: #ecf0f1;         /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em;      /* Slightly larger font */
+    padding: 8px 12px;     /* Padding for click area and spacing */
+    border-radius: 4px;    /* Slightly rounded corners */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover transition */
+    display: inline-block; /* Ensures padding is applied correctly */
+  }
+  
+  /* Hover state for navigation links */
+  header nav ul li a:hover {
+    background-color: #34495e; /* Slightly lighter background on hover */
+    color: #ffffff;          /* White text on hover */
+  }
+  
+  /* Active state for navigation links (uses the 'active' class added by NavLink) */
+  header nav ul li a.active {
+    background-color: #1abc9c; /* Teal background for active link */
+    color: #ffffff;          /* White text for active link */
+    font-weight: bold;       /* Make active link bold */
+  }
+  
+  /* Logout Button Specific Styling */
+  header nav ul li .logout-button {
+    background-color: #e74c3c; /* Red background for logout */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Match link vertical padding, adjust horizontal */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Match link font size or adjust slightly */
+    font-family: inherit; /* Use the same font as the rest of the header */
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover state for logout button */
+  header nav ul li .logout-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* --- Optional: Right-Align Logout Button --- */
+  /* If you want the logout button pushed to the far right */
+  
+  /* Modify the ul style: */
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+ 
+  
+  /* Add this style specifically for the list item containing the button: */
+  
+  header nav ul li:has(.logout-button) { 
+    margin-left: auto;
+  }
+  
+  /* // Alternative if :has() is not supported or if button is always last: */
+  header nav ul li:last-child {
+      margin-left: auto;
+  }
+ 

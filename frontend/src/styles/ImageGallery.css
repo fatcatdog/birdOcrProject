@@ -1,0 +1,56 @@
+/* Style the overall section container */
+.image-gallery-section {
+    max-width: 1200px; /* Optional: Limit max width of the whole section */
+    margin: 30px auto; /* Center the section on the page with top/bottom margin */
+    padding: 30px;
+    background-color: #f8f9fa; /* Light background for the section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Style the heading */
+  .image-gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the heading */
+    color: #343a40; /* Dark grey heading color */
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+  
+  /* Style the grid container */
+  .image-grid {
+    display: grid;
+    /* Responsive columns: minimum 200px wide, fill available space */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Gap between images */
+    justify-items: center; /* <<< ADD THIS LINE: Horizontally center items in their grid cell */
+  }
+  
+  /* Style individual gallery images */
+  .gallery-image {
+    width: 100%; /* Make image try to fill the grid cell width */
+    max-width: 300px; /* <<< ADD THIS LINE: Set maximum image width (adjust value as needed) */
+    height: 180px; /* Give images a fixed height for uniformity */
+    object-fit: cover; /* Scale image to cover, crop if necessary, maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /* Smooth transition for hover */
+    display: block; /* Prevents potential extra space below image */
+    cursor: pointer; /* Indicate images might be clickable */
+  }
+  
+  /* Add a hover effect to images */
+  .gallery-image:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
+  }
+  
+  /* Style for the 'No images found' message */
+  .image-grid p {
+      grid-column: 1 / -1; /* Make the paragraph span all columns */
+      text-align: center;
+      color: #6c757d; /* Muted text color */
+      font-size: 1.1em;
+      padding: 40px 0; /* Add some padding */
+  }
+  
