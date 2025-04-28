@@ -7,7 +7,7 @@
 
 /backend/uploads/
 /backend/node_modules/
-
+/backend/logs/
 # testing
 /coverage
 
