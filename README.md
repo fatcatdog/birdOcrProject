@@ -6,6 +6,6 @@ This project connects to a Test Stripe env, a Mongo cluster for auth. A .env fil
 
 Some Pictures of the application so far 
 
-![Login](eadmeImages/login.png)
+![Login](readmeImages/login.png)
 ![Gallery of images](readmeImages/gallery.png)
 ![Upload an image](readmeImages/gallery.png)
