@@ -1,0 +1,9 @@
+First prompt 
+
+I want to build a website that does the following: 
+
+-The ability to pay to login/sign up for a monthly fee of $5 (powered by Stripe) to be able to access the following functionality: 
+    -Have the ability to upload an image of a bird
+    -View previous images of birds they uploaded
+
+Could you help generate the code i would need to begin this project? 
