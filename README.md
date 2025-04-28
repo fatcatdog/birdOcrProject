@@ -8,4 +8,4 @@ Some Pictures of the application so far
 
 ![Login](readmeImages/login.png)
 ![Gallery of images](readmeImages/gallery.png)
-![Upload an image](readmeImages/gallery.png)
+![Upload an image](readmeImages/upload.png)
